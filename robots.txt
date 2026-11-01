@@ -1,0 +1,7 @@
+# robots.txt for Lattie's Decor & Events
+User-agent: *
+Allow: /
+Disallow: /404.html
+Disallow: /js_assets/vendor/
+
+Sitemap: https://latties-decor-events.netlify.app/sitemap.xml
