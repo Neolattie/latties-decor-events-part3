@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Request a Decor Quote | Lattie's Decor &amp; Events</title>
+  <meta name="description" content="Request a personalised decor quote for your wedding, birthday, baby shower or memorial. Get an instant estimate and availability check.">
+  <meta name="keywords" content="event decor quote, wedding decor quote Gauteng, book event decorator, baby shower decor enquiry">
+  <meta name="author" content="Lattie's Decor &amp; Events">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#2c2c2c">
+  <link rel="canonical" href="https://latties-decor-events.netlify.app/enquiry.html">
+
+  <!-- Open Graph / social sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Lattie's Decor &amp; Events">
+  <meta property="og:title" content="Request a Decor Quote | Lattie's Decor &amp; Events">
+  <meta property="og:description" content="Request a personalised decor quote for your wedding, birthday, baby shower or memorial. Get an instant estimate and availability check.">
+  <meta property="og:url" content="https://latties-decor-events.netlify.app/enquiry.html">
+  <meta property="og:image" content="https://latties-decor-events.netlify.app/_images/baby-shower-balloon-garden-decor.jpg">
+  <meta property="og:locale" content="en_ZA">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="_images/apple-touch-icon.png">
+  <link rel="stylesheet" href="css_assets/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header>
+    <a class="brand" href="index.html" aria-label="Lattie's Decor and Events - home">
+      <img src="_images/lattie-decor-events-logo.jpg" alt="Lattie's Decor and Events logo" width="60" height="60">
+      <span class="brand-name">Lattie's Decor &amp; Events</span>
+    </a>
+    <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+      <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+    </button>
+    <nav id="site-nav" aria-label="Main navigation">
+      <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="enquiry.html" class="active" aria-current="page">Enquiry / Quote</a></li>
+          <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section class="enquiry-card reveal" aria-labelledby="enquiry-title">
+      <div class="form-header">
+        <h1 id="enquiry-title">Request a Personalised Quote</h1>
+        <div class="divider" aria-hidden="true">
+      <div class="divider-dot"></div>
+    </div>
+        <p>Tell us about your event details and we will craft a bespoke proposal for you. You will see an instant estimate once you submit.</p>
+      </div>
+
+      <form id="enquiry-form" action="https://formsubmit.co/Lattieneo@gmail.com" method="POST" novalidate>
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="fullname">Full Name</label>
+            <input type="text" id="fullname" name="fullname" placeholder="e.g. Neo Tlamama" autocomplete="name" required minlength="2" maxlength="60" aria-describedby="fullname-error">
+            <span class="error-msg" id="fullname-error" aria-live="polite"></span>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="e.g. neo@example.com" autocomplete="email" required aria-describedby="email-error">
+            <span class="error-msg" id="email-error" aria-live="polite"></span>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="e.g. 082 123 4567" autocomplete="tel" required aria-describedby="phone-error">
+            <span class="error-msg" id="phone-error" aria-live="polite"></span>
+          </div>
+          <div class="form-group">
+            <label for="eventtype">Event Type</label>
+            <select id="eventtype" name="eventtype" required aria-describedby="eventtype-error">
+              <option value="">-- Select Event Type --</option>
+              <option value="wedding">Wedding / Reception</option>
+              <option value="babyshower">Baby Shower</option>
+              <option value="birthday">Birthday Party</option>
+              <option value="memorial">Memorial Service</option>
+              <option value="other">Other Celebration</option>
+            </select>
+            <span class="error-msg" id="eventtype-error" aria-live="polite"></span>
+          </div>
+          <div class="form-group">
+            <label for="eventdate">Event Date</label>
+            <input type="date" id="eventdate" name="eventdate" required aria-describedby="eventdate-error">
+            <span class="error-msg" id="eventdate-error" aria-live="polite"></span>
+          </div>
+          <div class="form-group">
+            <label for="guestcount">Estimated Guests</label>
+            <input type="number" id="guestcount" name="guestcount" placeholder="e.g. 150" min="10" max="1000" step="1" inputmode="numeric" required aria-describedby="guestcount-error">
+            <span class="error-msg" id="guestcount-error" aria-live="polite"></span>
+          </div>
+          <div class="form-group">
+            <label for="budget">Budget Range (ZAR)</label>
+            <select id="budget" name="budget" required aria-describedby="budget-error">
+              <option value="">-- Select Budget --</option>
+              <option value="10k-25k">R10,000 - R25,000</option>
+              <option value="25k-50k">R25,000 - R50,000</option>
+              <option value="50k-100k">R50,000 - R100,000</option>
+              <option value="100k+">R100,000+</option>
+            </select>
+            <span class="error-msg" id="budget-error" aria-live="polite"></span>
+          </div>
+          <div class="form-group">
+            <label for="package">Package of Interest (optional)</label>
+            <select id="package" name="package">
+              <option value="">-- No preference --</option>
+            </select>
+            <span class="error-msg" aria-hidden="true"></span>
+          </div>
+          <div class="form-group form-group-full">
+            <label for="venue">Venue / City Location</label>
+            <input type="text" id="venue" name="venue" placeholder="e.g. Sandton, Johannesburg" autocomplete="off" required minlength="3" maxlength="100" aria-describedby="venue-error">
+            <span class="error-msg" id="venue-error" aria-live="polite"></span>
+          </div>
+          <div class="form-group form-group-full">
+            <label for="notes">Special Requirements / Theme Vision</label>
+            <textarea id="notes" name="notes" rows="4" maxlength="500" placeholder="Share any specific colour schemes, decor requests, or visions you have in mind..." aria-describedby="notes-error notes-count"></textarea>
+            <div class="char-count" id="notes-count">0 / 500</div>
+            <span class="error-msg" id="notes-error" aria-live="polite"></span>
+          </div>
+
+          <div class="honeypot" aria-hidden="true">
+            <label for="_honey">Leave this field empty</label>
+            <input type="text" id="_honey" name="_honey" tabindex="-1" autocomplete="off">
+          </div>
+          <input type="hidden" name="_captcha" value="false">
+
+          <div class="form-group-full">
+            <button type="submit" class="submit-btn">SUBMIT REQUEST</button>
+          </div>
+        </div>
+      </form>
+      <div class="form-status" id="form-status" role="status" aria-live="polite"></div>
+    </section>
+
+  </main>
+
+  <footer>
+    <ul class="footer-links">
+      <li><a href="services.html">Services</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="enquiry.html">Get a Quote</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <p>Wedding, birthday, baby shower &amp; memorial decor | Midrand &amp; Sandton, Gauteng</p>
+    <p>&copy; <span id="year">2026</span> Lattie's Decor &amp; Events. All Rights Reserved.</p>
+  </footer>
+
+  <script src="js_assets/main.js" defer></script>
+  <script src="js_assets/packages-data.js" defer></script>
+  <script src="js_assets/forms.js" defer></script>
+
+</body>
+</html>

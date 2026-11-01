@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact &amp; Studio Locations | Lattie's Decor &amp; Events</title>
+  <meta name="description" content="Contact Lattie's Decor &amp; Events. Visit our Midrand or Sandton studio, find us on the map or send a message about your event.">
+  <meta name="keywords" content="contact event decorator, Midrand decor studio, Sandton decor studio, Lattie's Decor contact, Gauteng event decor">
+  <meta name="author" content="Lattie's Decor &amp; Events">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#2c2c2c">
+  <link rel="canonical" href="https://latties-decor-events.netlify.app/contact.html">
+
+  <!-- Open Graph / social sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Lattie's Decor &amp; Events">
+  <meta property="og:title" content="Contact &amp; Studio Locations | Lattie's Decor &amp; Events">
+  <meta property="og:description" content="Contact Lattie's Decor &amp; Events. Visit our Midrand or Sandton studio, find us on the map or send a message about your event.">
+  <meta property="og:url" content="https://latties-decor-events.netlify.app/contact.html">
+  <meta property="og:image" content="https://latties-decor-events.netlify.app/_images/midrand-studio-lounge.jpg">
+  <meta property="og:locale" content="en_ZA">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="_images/apple-touch-icon.png">
+  <link rel="stylesheet" href="css_assets/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header>
+    <a class="brand" href="index.html" aria-label="Lattie's Decor and Events - home">
+      <img src="_images/lattie-decor-events-logo.jpg" alt="Lattie's Decor and Events logo" width="60" height="60">
+      <span class="brand-name">Lattie's Decor &amp; Events</span>
+    </a>
+    <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+      <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+    </button>
+    <nav id="site-nav" aria-label="Main navigation">
+      <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="enquiry.html">Enquiry / Quote</a></li>
+          <li><a href="contact.html" class="active" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <h1 class="page-title reveal">Get In Touch</h1>
+    <div class="divider" aria-hidden="true">
+      <div class="divider-dot"></div>
+    </div>
+
+    <blockquote class="highlight-quote reveal">
+      "Let's bring your vision to life. We'd love to hear about your event &ndash; reach out and let us start planning something beautiful together."
+    </blockquote>
+
+    <div class="studio-grid">
+      <article class="studio-card reveal">
+        <img src="_images/midrand-studio-lounge-400.jpg" srcset="_images/midrand-studio-lounge-400.jpg 400w, _images/midrand-studio-lounge.jpg 800w"
+             sizes="(max-width: 600px) 100vw, 50vw" alt="Lattie's Decor Midrand studio lounge with green armchairs and logo wall" class="studio-img" width="400" height="280" loading="lazy" decoding="async">
+        <div class="studio-details">
+          <h3>Midrand Studio</h3>
+          <p><strong>Tel:</strong> <a href="tel:+27683283939">+27 68 328 3939</a></p>
+          <p><strong>Email Address:</strong> <a href="mailto:Lattieneo@gmail.com">Lattieneo@gmail.com</a></p>
+          <p><strong>Location:</strong> Midrand, Gauteng, South Africa</p>
+          <p><strong>Operating Hours:</strong> Monday&ndash;Friday, 09:00&ndash;18:30</p>
+        </div>
+      </article>
+      <article class="studio-card reveal">
+        <img src="_images/sandton-studio-reception-400.jpg" srcset="_images/sandton-studio-reception-400.jpg 400w, _images/sandton-studio-reception.jpg 800w"
+             sizes="(max-width: 600px) 100vw, 50vw" alt="Lattie's Decor Sandton studio reception desk and logo wall" class="studio-img" width="400" height="280" loading="lazy" decoding="async">
+        <div class="studio-details">
+          <h3>Sandton Studio</h3>
+          <p><strong>Tel:</strong> <a href="tel:+27683283939">+27 68 328 3939</a></p>
+          <p><strong>Email Address:</strong> <a href="mailto:Lattiedecor@gmail.com">Lattiedecor@gmail.com</a></p>
+          <p><strong>Location:</strong> Sandton, Gauteng, South Africa</p>
+          <p><strong>Operating Hours:</strong> Monday&ndash;Friday, 09:00&ndash;18:30</p>
+        </div>
+      </article>
+    </div>
+
+    <section class="map-wrap reveal" aria-labelledby="map-title">
+      <h2 class="section-title" id="map-title">Find Our Studios</h2>
+      <div class="divider" aria-hidden="true">
+      <div class="divider-dot"></div>
+    </div>
+      <div class="map-buttons">
+        <button type="button" class="btn btn-outline btn-small" data-studio="midrand">Show Midrand</button>
+        <button type="button" class="btn btn-outline btn-small" data-studio="sandton">Show Sandton</button>
+      </div>
+      <div id="studio-map" role="region" aria-label="Map showing the Midrand and Sandton studios"></div>
+    </section>
+
+    <section class="enquiry-card reveal" aria-labelledby="message-title">
+      <div class="form-header">
+        <h2 id="message-title">Send Us a Message</h2>
+        <p>Fill in the form and we will prepare an email for you to send to our team.</p>
+      </div>
+
+      <form id="contact-form" action="mailto:Lattieneo@gmail.com" method="POST" enctype="text/plain" novalidate>
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="fullname">Full Name</label>
+            <input type="text" id="fullname" name="fullname" autocomplete="name" required minlength="2" maxlength="60" aria-describedby="fullname-error">
+            <span class="error-msg" id="fullname-error" aria-live="polite"></span>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" autocomplete="email" required aria-describedby="email-error">
+            <span class="error-msg" id="email-error" aria-live="polite"></span>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone (optional)</label>
+            <input type="tel" id="phone" name="phone" placeholder="e.g. 082 123 4567" autocomplete="tel" aria-describedby="phone-error">
+            <span class="error-msg" id="phone-error" aria-live="polite"></span>
+          </div>
+          <div class="form-group">
+            <label for="messagetype">Type of Message</label>
+            <select id="messagetype" name="messagetype" required aria-describedby="messagetype-error">
+              <option value="">-- Select Message Type --</option>
+              <option value="general">General question</option>
+              <option value="booking">Booking follow-up</option>
+              <option value="feedback">Feedback or compliment</option>
+              <option value="partnership">Partnership / supplier</option>
+              <option value="other">Other</option>
+            </select>
+            <span class="error-msg" id="messagetype-error" aria-live="polite"></span>
+          </div>
+          <div class="form-group form-group-full">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" required minlength="3" maxlength="80" aria-describedby="subject-error">
+            <span class="error-msg" id="subject-error" aria-live="polite"></span>
+          </div>
+          <div class="form-group form-group-full">
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" rows="6" required minlength="20" maxlength="1000" aria-describedby="message-error message-count"></textarea>
+            <div class="char-count" id="message-count">0 / 1000</div>
+            <span class="error-msg" id="message-error" aria-live="polite"></span>
+          </div>
+
+          <div class="honeypot" aria-hidden="true">
+            <label for="_honey">Leave this field empty</label>
+            <input type="text" id="_honey" name="_honey" tabindex="-1" autocomplete="off">
+          </div>
+
+          <div class="form-group-full">
+            <button type="submit" class="submit-btn">PREPARE MY EMAIL</button>
+          </div>
+        </div>
+      </form>
+      <div class="form-status" id="form-status" role="status" aria-live="polite"></div>
+    </section>
+
+  </main>
+
+  <footer>
+    <ul class="footer-links">
+      <li><a href="services.html">Services</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="enquiry.html">Get a Quote</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <p>Wedding, birthday, baby shower &amp; memorial decor | Midrand &amp; Sandton, Gauteng</p>
+    <p>&copy; <span id="year">2026</span> Lattie's Decor &amp; Events. All Rights Reserved.</p>
+  </footer>
+
+  <script src="js_assets/main.js" defer></script>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="" defer></script>
+  <script src="js_assets/map.js" defer></script>
+  <script src="js_assets/forms.js" defer></script>
+
+</body>
+</html>
